@@ -1,0 +1,6 @@
+{
+  "name": "react-boilerplate",
+  "env": {
+    "NPM_CONFIG_PRODUCTION": true
+  }
+}

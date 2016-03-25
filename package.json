@@ -1,0 +1,62 @@
+{
+  "name": "cowboy",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "watch": "watchify -d app/browser.js -o dist/bundle.js -v",
+    "build": "browserify -d app/browser.js > dist/bundle.js",
+    "start": "babel-node app/server",
+    "test": "jest",
+    "lint": "eslint app",
+    "doc": "esdoc -c esdoc.json",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brddg/cowboy"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "koba04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brddg/cowboy/issues"
+  },
+  "homepage": "https://github.com/brddg/cowboy",
+  "devDependencies": {
+    "babel-eslint": "^3.1.18",
+    "babel-jest": "^4.0.0",
+    "esdoc": "^0.1.2",
+    "eslint": "^0.23.0",
+    "eslint-plugin-react": "^2.5.2",
+    "jest-cli": "0.4.0",
+    "watchify": "^3.2.2"
+  },
+  "dependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "babel": "^5.5.6",
+    "classnames": "^2.1.2",
+    "express": "^4.12.4",
+    "flux": "^2.0.3",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "superagent": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "node_modules/react"
+    ]
+  },
+  "engines": {
+    "node": "0.12.0"
+  }
+}
