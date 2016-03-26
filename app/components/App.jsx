@@ -21,7 +21,7 @@ export default class App extends React.Component {
         <meta charSet="utf8" />
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
       </head>
-      <body>
+      <body style={{ backgroundColor: "#6698C8" }}>
         <div id="app" className="container">
           <RouteHandler />
         </div>
