@@ -36,7 +36,7 @@ export default class Top extends React.Component {
           chunks.push(chunk);
           chunk = ""
         } else {
-          chunk += `,${email}`
+          chunk += `, ${email}`
         }
       }
 
