@@ -67,7 +67,7 @@ export default class Top extends React.Component {
 
         {() => {
           if (this.state.errors.length > 0) {
-            return <h3>{this.state.errors.length} errors</h3>
+            return <h3>{this.state.errors.length} bandits</h3>
           }
         }()}
 
