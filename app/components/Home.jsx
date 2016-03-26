@@ -61,7 +61,7 @@ export default class Top extends React.Component {
 
         {() => {
           if (this.state.chunks.length > 0) {
-            return <h2 style={{ paddingTop: "30px" }}>{this.state.chunks.length} chunks</h2>
+            return <h2 style={{ paddingTop: "30px" }}>{this.state.chunks.length} herds</h2>
           }
         }()}
 
