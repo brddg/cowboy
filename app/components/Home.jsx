@@ -32,7 +32,7 @@ export default class Top extends React.Component {
       if (chunk === "") {
         chunk += `${email}`
       } else {
-        if (chunk.length + (email.length + 1) > 500) {
+        if (chunk.length + (email.length + 2) > 500) {
           chunks.push(chunk);
           chunk = ""
         } else {
