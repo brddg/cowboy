@@ -43,7 +43,7 @@
     "object-assign": "^3.0.0",
     "react": "^15.6.2",
     "react-router": "^0.13.3",
-    "superagent": "^1.1.0"
+    "superagent": "^6.1.0"
   },
   "browserify": {
     "transform": [
